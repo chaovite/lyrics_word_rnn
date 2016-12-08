@@ -61,8 +61,8 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
             else:
                 lyric_p = lyric_p + c
     # replace n't with ' n't'
-    lyric_p = lyric_p.replace("n't"," n't")
-    Lyrics_process.append(lyric_p)
+        lyric_p = lyric_p.replace("n't"," n't")
+        Lyrics_process.append(lyric_p)
     print('Finish Lyrics Preprocessing!')
     ntotal = len(Lyrics_process) # total number of lyrics
     ntrain = round(ntotal * train_portion) + 1 # number of training samples
