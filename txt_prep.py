@@ -30,11 +30,14 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
 
     punctuation = string.punctuation
     # add a special punctuation (the following line is hard coded!)
-    p_special = Lyrics[1][70] # '’'
+    p_special = '’'+'‘' # '’'
+    print(p_special)
     # replace '’' with "'"
     for i in range(len(Lyrics)):
-        Lyrics[i] = Lyrics[i].replace(p_special,"'")
-    
+        Lyrics[i] = Lyrics[i].replace('’',"'")
+        Lyrics[i] = Lyrics[i].replace('‘',"'")
+        Lyrics[i] = Lyrics[i].replace('“',"'")
+        Lyrics[i] = Lyrics[i].replace('”',"'")
     # add white space to the front of every punctuation;
     Lyrics_process = [];
     count = 0   
@@ -52,7 +55,7 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
                         chars = chars + c_p
                     else:
                         break            
-                if chars in {'s','ve','d','re','m'}:
+                if chars in {'s','ve','d','re','m','ll'}:
                     lyric_p = lyric_p + ' '+ c # add one space
                 elif chars == 't' and lyric[i-1] == 'n': # don't split n't
                     lyric_p = lyric_p + c
