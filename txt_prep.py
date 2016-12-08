@@ -2,7 +2,7 @@
 # and then output training and testing txt file.
 import json
 import os
-import string
+import string   
 import numpy as np
 
 def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, save_folder = 'data/'):
@@ -25,6 +25,7 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
         if len(lyric) > 5: # squeeze empty lyrics out.
             lyric = lyric.replace('\r','') # remove \r
             lyric = lyric.replace('\n',' eos ') # replace \n with EOS
+            lyric = lyric.lower()# change all words to lower case.
             Lyrics.append(lyric)
 
     punctuation = string.punctuation
@@ -36,12 +37,12 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
     
     # add white space to the front of every punctuation;
     Lyrics_process = [];
-    count = 0
+    count = 0   
     for lyric in Lyrics:
-    	count = count + 1
-    	print('%d th song in %d songs' %(count, len(Lyrics)))
-    	lyric_p = ''
-    	for i in range(len(lyric)):
+        count = count + 1
+        print('%d th song in %d songs' %(count, len(Lyrics)))
+        lyric_p = ''
+        for i in range(len(lyric)):
             c = lyric[i]
             if c in punctuation:
                 # read until white space;
@@ -50,15 +51,18 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
                     if c_p != ' ':
                         chars = chars + c_p
                     else:
-                        break
-                
-                if chars in {'s','ve','d','re','t','m'}:
+                        break            
+                if chars in {'s','ve','d','re','m'}:
                     lyric_p = lyric_p + ' '+ c # add one space
+                elif chars == 't' and lyric[i-1] == 'n': # don't split n't
+                    lyric_p = lyric_p + c
                 else:
                     lyric_p = lyric_p + ' '+ c + ' '
             else:
                 lyric_p = lyric_p + c
-    	Lyrics_process.append(lyric_p)
+    # replace n't with ' n't'
+    lyric_p = lyric_p.replace("n't"," n't")
+    Lyrics_process.append(lyric_p)
     print('Finish Lyrics Preprocessing!')
     ntotal = len(Lyrics_process) # total number of lyrics
     ntrain = round(ntotal * train_portion) + 1 # number of training samples
@@ -68,13 +72,16 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
     index_train = order[0:ntrain]
     index_test  = order[ntrain:ntotal]
     with open(save_folder+'train.txt','w') as f_train:
-    	for ind in index_train:
-    		f_train.write(Lyrics_process[ind])
+        for ind in index_train:
+            f_train.write(Lyrics_process[ind])
     with open(save_folder+'test.txt','w') as f_test:
-    	for ind in index_test:
-    		f_test.write(Lyrics_process[ind])
-    print('Finish writing training and test text files to save folder')
+        for ind in index_test:
+            f_test.write(Lyrics_process[ind])
+    with open(save_folder+'total.txt','w') as f_total:
+        for lyric in Lyrics_process:
+            f_total.write(lyric)
+    print('Finish writing training, test and total text files to save folder')
     return Lyrics_process
-    
+
 # running this script
-#Lyric_processed = txt_prep.train_test_txt_gen(json_file='data/LyricsData.json',save_foler ='data/')
+#Lyric_processed = txt_prep.train_test_txt_gen(json_file='data/LyricsData.json',save_folder ='data/')
