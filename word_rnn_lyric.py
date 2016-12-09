@@ -43,7 +43,7 @@ The hyperparameters used in the model:
 
 To run:
 
-$ python Lyric_word_lm.py --data_path=simple-examples/data/
+$ python word_rnn_lyric.py --data_path=data/ --save_path=save_file/ --model=small
 
 """
 from __future__ import absolute_import
@@ -73,16 +73,18 @@ flags.DEFINE_bool("use_fp16", False,
 
 FLAGS = flags.FLAGS
  
+def data_type():
+  return tf.float16 if FLAGS.use_fp16 else tf.float32
 
 class LyricInput(object):
   """The input data."""
   def __init__(self, config, data, name=None):
-	self.batch_size = batch_size = config.batch_size
-	self.num_steps = num_steps = config.num_steps
-	self.epoch_size = ((len(data) // batch_size) - 1) // num_steps
-	# number of batches per epoch.
-	self.input_data, self.targets = reader.batch_data_producer(
-		data, batch_size, num_steps, name=name)
+    self.batch_size = batch_size = config.batch_size
+    self.num_steps = num_steps = config.num_steps
+    self.epoch_size = ((len(data) // batch_size) - 1) // num_steps
+    # number of batches per epoch.
+    self.input_data, self.targets = reader.batch_data_producer(
+        data, batch_size, num_steps, name=name)
 
 
 class LyricModel(object):
@@ -90,7 +92,7 @@ class LyricModel(object):
 
   def __init__(self, is_training, config, input_, embedding):
     self._input = input_
-
+    print(embedding.shape)
     batch_size = input_.batch_size
     num_steps = input_.num_steps
     size = config.hidden_size
@@ -105,16 +107,12 @@ class LyricModel(object):
           lstm_cell, output_keep_prob=config.keep_prob)
     cell = tf.nn.rnn_cell.MultiRNNCell([lstm_cell] * config.num_layers, state_is_tuple=True)
 
-	# The memory state of LSTM is of a vector of zeros that gets updated after LSTM reading each word.
-	# For computational purposes, the memory state is updated after processing a batch of words. Thus,
-	# the dimension of memory state now is batch_size*state_size.
+    # The memory state of LSTM is of a vector of zeros that gets updated after LSTM reading each word.
+    # For computational purposes, the memory state is updated after processing a batch of words. Thus,
+    # the dimension of memory state now is batch_size*state_size.
     self._initial_state = cell.zero_state(batch_size, data_type())
     # Th state has batch_size? Process not in word by word basis but batch by batch?
-
-  #   with tf.device("/cpu:0"):
-#       embedding = tf.get_variable(
-#           "embedding", [vocab_size, size], dtype=data_type())
-    # convert the embedding to tensor.
+    embedding = tf.constant(embedding)
     inputs = tf.nn.embedding_lookup(embedding, input_.input_data)
 
     if is_training and config.keep_prob < 1:
@@ -137,11 +135,12 @@ class LyricModel(object):
         if time_step > 0: tf.get_variable_scope().reuse_variables()
         (cell_output, state) = cell(inputs[:, time_step, :], state)
         outputs.append(cell_output)
-	# this -1 is to automatically calculate the dimension
+    # this -1 is to automatically calculate the dimension
     output = tf.reshape(tf.concat(1, outputs), [-1, size])
-    softmax_w = tf.get_variable
-        "softmax_w", [size, vocab_size], dtype=data_type())
-    softmax_b = tf.get_variable("softmax_b", [vocab_size], dtype=data_type())
+    # softmax_w = tf.get_variable
+#         "softmax_w", [size, vocab_size], dtype=data_type())
+    softmax_w = tf.transpose(embedding)
+    softmax_b = tf.constant(np.zeros(vocab_size,), dtype = embedding.dtype)
     logits = tf.matmul(output, softmax_w) + softmax_b
     loss = tf.nn.seq2seq.sequence_loss_by_example(
         [logits],
@@ -216,7 +215,7 @@ class SmallConfig(object):
   keep_prob = 1.0
   lr_decay = 0.5
   batch_size = 20
-  vocab_size = 400000
+  vocab_size = 10000
 
 
 class MediumConfig(object):
@@ -226,7 +225,7 @@ class MediumConfig(object):
   max_grad_norm = 5
   num_layers = 2
   num_steps = 35
-  hidden_size = 650
+  hidden_size = 200
   max_epoch = 6
   max_max_epoch = 39
   keep_prob = 0.5
@@ -242,7 +241,7 @@ class LargeConfig(object):
   max_grad_norm = 10
   num_layers = 2
   num_steps = 35
-  hidden_size = 1500
+  hidden_size = 300
   max_epoch = 14
   max_max_epoch = 55
   keep_prob = 0.35
@@ -263,18 +262,17 @@ def run_epoch(session, model, eval_op=None, verbose=False):
       "final_state": model.final_state,
   }
   if eval_op is not None:
-  	# add training operations into the fetches.
+    # add training operations into the fetches.
     fetches["eval_op"] = eval_op
 
   for step in range(model.input.epoch_size):
     feed_dict = {}
-    print(session.run(model.initial_state))
     for i, (c, h) in enumerate(model.initial_state):
       feed_dict[c] = state[i].c
       feed_dict[h] = state[i].h
-	
-	# this step is crucial! This step basically runs launch the training in this epoch
-	# and return the cost and final state of this traning.
+    
+    # this step is crucial! This step basically runs launch the training in this epoch
+    # and return the cost and final state of this traning.
     vals = session.run(fetches, feed_dict)
     cost = vals["cost"]
     state = vals["final_state"]
@@ -307,40 +305,40 @@ def main(_):
   if not FLAGS.data_path:
     raise ValueError("Must set --data_path to lyric data directory")
 
-	raw_data = reader.lyric_raw_data(FLAGS.data_path)
-	train_data, valid_data, test_data = raw_data
+  raw_data = reader.lyric_raw_data(FLAGS.data_path)
+  train_data, valid_data, test_data, embedding = raw_data
+  print('Dimension embedding is:', embedding.shape)
 
-	config = get_config()
-	eval_config = get_config()
-	eval_config.batch_size = 1
-	eval_config.num_steps = 1
+  config = get_config()
+  eval_config = get_config()
+  eval_config.batch_size = 1
+  eval_config.num_steps = 1
+  
 
   with tf.Graph().as_default():
-    initializer = tf.random_uniform_initializer(-config.init_scale,
-                                                config.init_scale)
+    initializer = tf.random_uniform_initializer(-config.init_scale,config.init_scale)
 
     with tf.name_scope("Train"):
       train_input = LyricInput(config=config, data=train_data, name="TrainInput")
       with tf.variable_scope("Model", reuse=None, initializer=initializer):
-        m = LyricModel(is_training=True, config=config, input_=train_input)
+        m = LyricModel(is_training=True, config=config, input_=train_input, embedding = embedding)
       tf.scalar_summary("Training Loss", m.cost)
       tf.scalar_summary("Learning Rate", m.lr)
 
     with tf.name_scope("Valid"):
       valid_input = LyricInput(config=config, data=valid_data, name="ValidInput")
-      with tf.variable_scope("Model", reuse=True, initializer=initializer):raw_data
-        mvalid = LyricModel(is_training=False, config=config, input_=valid_input)
+      with tf.variable_scope("Model", reuse=True, initializer=initializer):
+        mvalid = LyricModel(is_training=False, config=config, input_=valid_input, embedding = embedding)
       tf.scalar_summary("Validation Loss", mvalid.cost)
 
     with tf.name_scope("Test"):
       test_input = LyricInput(config=eval_config, data=test_data, name="TestInput")
       with tf.variable_scope("Model", reuse=True, initializer=initializer):
         mtest = LyricModel(is_training=False, config=eval_config,
-                         input_=test_input)
+                         input_=test_input, embedding = embedding)
 
     sv = tf.train.Supervisor(logdir=FLAGS.save_path)
     with sv.managed_session() as session:
-      print(session.run(m.input))
       for i in range(config.max_max_epoch):
         lr_decay = config.lr_decay ** max(i + 1 - config.max_epoch, 0.0)
         m.assign_lr(session, config.learning_rate * lr_decay)

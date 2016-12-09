@@ -1,4 +1,4 @@
-# This script pre process the lyrics data stored in json file
+#This script pre process the lyrics data stored in json file
 # and then output training and testing txt file.
 import json
 import os
@@ -23,7 +23,7 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
     
     for lyric in data['Lyrics']:
         if len(lyric) > 5: # squeeze empty lyrics out.
-            lyric = lyric.replace('\r','') # remove \r
+            lyric = lyric.replace('\r',' ') # remove \r
             lyric = lyric.replace('\n',' eos ') # replace \n with EOS
             lyric = lyric.lower()# change all words to lower case.
             Lyrics.append(lyric)
@@ -77,12 +77,15 @@ def train_test_txt_gen(json_file='data/LyricsData.json',train_portion = 0.8, sav
     with open(save_folder+'train.txt','w') as f_train:
         for ind in index_train:
             f_train.write(Lyrics_process[ind])
+            f_train.write(' eos ')
     with open(save_folder+'test.txt','w') as f_test:
         for ind in index_test:
             f_test.write(Lyrics_process[ind])
+            f_test.write(' eos ')
     with open(save_folder+'total.txt','w') as f_total:
         for lyric in Lyrics_process:
             f_total.write(lyric)
+            f_total.write(' eos ')
     print('Finish writing training, test and total text files to save folder')
     return Lyrics_process
 
