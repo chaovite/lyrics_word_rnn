@@ -70,7 +70,7 @@ count = 0
 with open('words_miss/all_miss_words.txt','w') as f:
     for word in words_miss:
         count = count + 1
-        f.write('{}: {}'.format(str(count), word))
+        f.write('{}: {} \n'.format(str(count), word))
 
 
 
