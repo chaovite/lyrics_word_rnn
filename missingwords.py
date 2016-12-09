@@ -65,3 +65,14 @@ with open('words_miss/All_Lyrics.txt','w') as f:
 print('Processed lyrics: %d words missing in the vocabulary of the pretrained embedding'%(len(words_miss)))
 print(words_miss)
 
+# output all the missing words:
+count = 0
+with open('words_miss/all_miss_words.txt','w') as f:
+    for word in words_miss:
+        count = count + 1
+        f.write('{}: {}'.format(str(count), word))
+
+
+
+
+

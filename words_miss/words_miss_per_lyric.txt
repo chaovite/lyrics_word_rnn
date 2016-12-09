@@ -3,11 +3,11 @@ Lyric 2 has 2 words missing from embedding vocabulary
 These words are: drummin sweepin 
 Lyric 3 has 0 words missing from embedding vocabulary 
 Lyric 4 has 5 words missing from embedding vocabulary 
-These words are: listenin drippin bleedin whisperin warnin 
+These words are: bleedin warnin drippin listenin whisperin 
 Lyric 5 has 0 words missing from embedding vocabulary 
 Lyric 6 has 0 words missing from embedding vocabulary 
 Lyric 7 has 2 words missing from embedding vocabulary 
-These words are: rybody wond 
+These words are: wond rybody 
 Lyric 8 has 0 words missing from embedding vocabulary 
 Lyric 9 has 0 words missing from embedding vocabulary 
 Lyric 10 has 0 words missing from embedding vocabulary 
@@ -19,7 +19,7 @@ Lyric 14 has 1 words missing from embedding vocabulary
 These words are: plowmen 
 Lyric 15 has 0 words missing from embedding vocabulary 
 Lyric 16 has 5 words missing from embedding vocabulary 
-These words are: rybody fumblin squattin restin mumblin 
+These words are: mumblin restin rybody fumblin squattin 
 Lyric 17 has 0 words missing from embedding vocabulary 
 Lyric 18 has 2 words missing from embedding vocabulary 
 These words are: weepin dryin 
@@ -49,10 +49,10 @@ Lyric 35 has 0 words missing from embedding vocabulary
 Lyric 36 has 1 words missing from embedding vocabulary 
 These words are: berenda 
 Lyric 37 has 3 words missing from embedding vocabulary 
-These words are: pecas maizes signorita 
+These words are: pecas signorita maizes 
 Lyric 38 has 0 words missing from embedding vocabulary 
 Lyric 39 has 2 words missing from embedding vocabulary 
-These words are: tickin listenin 
+These words are: listenin tickin 
 Lyric 40 has 2 words missing from embedding vocabulary 
 These words are: attendez hearin 
 Lyric 41 has 2 words missing from embedding vocabulary 
@@ -61,7 +61,7 @@ Lyric 42 has 0 words missing from embedding vocabulary
 Lyric 43 has 0 words missing from embedding vocabulary 
 Lyric 44 has 0 words missing from embedding vocabulary 
 Lyric 45 has 3 words missing from embedding vocabulary 
-These words are: carryin boilin eruke 
+These words are: eruke boilin carryin 
 Lyric 46 has 1 words missing from embedding vocabulary 
 These words are: rybody 
 Lyric 47 has 1 words missing from embedding vocabulary 
@@ -73,18 +73,18 @@ These words are: roamin ownin
 Lyric 50 has 0 words missing from embedding vocabulary 
 Lyric 51 has 0 words missing from embedding vocabulary 
 Lyric 52 has 2 words missing from embedding vocabulary 
-These words are: bummin wreckin 
+These words are: wreckin bummin 
 Lyric 53 has 0 words missing from embedding vocabulary 
 Lyric 54 has 0 words missing from embedding vocabulary 
 Lyric 55 has 5 words missing from embedding vocabulary 
-These words are: shufflin town—swinging breathin slow—i scufflin 
+These words are: town—swinging breathin shufflin scufflin slow—i 
 Lyric 56 has 0 words missing from embedding vocabulary 
 Lyric 57 has 1 words missing from embedding vocabulary 
 These words are: listenin 
 Lyric 58 has 0 words missing from embedding vocabulary 
 Lyric 59 has 0 words missing from embedding vocabulary 
 Lyric 60 has 3 words missing from embedding vocabulary 
-These words are: whene canadee wheresoever 
+These words are: wheresoever canadee whene 
 Lyric 61 has 0 words missing from embedding vocabulary 
 Lyric 62 has 0 words missing from embedding vocabulary 
 Lyric 63 has 1 words missing from embedding vocabulary 
@@ -92,7 +92,7 @@ These words are: bumpety
 Lyric 64 has 0 words missing from embedding vocabulary 
 Lyric 65 has 0 words missing from embedding vocabulary 
 Lyric 66 has 5 words missing from embedding vocabulary 
-These words are: mateless unpawned forsaked mistitled unharmful 
+These words are: forsaked mateless mistitled unpawned unharmful 
 Lyric 67 has 0 words missing from embedding vocabulary 
 Lyric 68 has 0 words missing from embedding vocabulary 
 Lyric 69 has 0 words missing from embedding vocabulary 
@@ -104,10 +104,10 @@ Lyric 73 has 0 words missing from embedding vocabulary
 Lyric 74 has 0 words missing from embedding vocabulary 
 Lyric 75 has 0 words missing from embedding vocabulary 
 Lyric 76 has 8 words missing from embedding vocabulary 
-These words are: deadweight—i lettin backstabbin rooster—feel pasqualli you—now lord—i whiskey—i 
+These words are: deadweight—i you—now whiskey—i lord—i pasqualli lettin backstabbin rooster—feel 
 Lyric 77 has 0 words missing from embedding vocabulary 
 Lyric 78 has 3 words missing from embedding vocabulary 
-These words are: unloadin prayin whinin 
+These words are: whinin prayin unloadin 
 Lyric 79 has 1 words missing from embedding vocabulary 
 These words are: cursin 
 Lyric 80 has 1 words missing from embedding vocabulary 
@@ -118,9 +118,9 @@ Lyric 82 has 2 words missing from embedding vocabulary
 These words are: housetops weeped 
 Lyric 83 has 0 words missing from embedding vocabulary 
 Lyric 84 has 2 words missing from embedding vocabulary 
-These words are: pennywhistles spoonfeeding 
+These words are: spoonfeeding pennywhistles 
 Lyric 85 has 2 words missing from embedding vocabulary 
-These words are: waggin punchin 
+These words are: punchin waggin 
 Lyric 86 has 2 words missing from embedding vocabulary 
 These words are: bordertowns cottonfield 
 Lyric 87 has 0 words missing from embedding vocabulary 
@@ -150,15 +150,15 @@ Lyric 104 has 0 words missing from embedding vocabulary
 Lyric 105 has 1 words missing from embedding vocabulary 
 These words are: chokin 
 Lyric 106 has 2 words missing from embedding vocabulary 
-These words are: grievin californ 
+These words are: californ grievin 
 Lyric 107 has 2 words missing from embedding vocabulary 
-These words are: rything forsaked 
+These words are: forsaked rything 
 Lyric 108 has 3 words missing from embedding vocabulary 
-These words are: shapeth teacheth turneth 
+These words are: teacheth turneth shapeth 
 Lyric 109 has 0 words missing from embedding vocabulary 
 Lyric 110 has 0 words missing from embedding vocabulary 
 Lyric 111 has 6 words missing from embedding vocabulary 
-These words are: me—times listenin ya—strong while—it you—inspire alleys—through 
+These words are: me—times ya—strong alleys—through listenin while—it you—inspire 
 Lyric 112 has 2 words missing from embedding vocabulary 
 These words are: phillistine climbin 
 Lyric 113 has 0 words missing from embedding vocabulary 
@@ -170,7 +170,7 @@ These words are: rootie lovein
 Lyric 117 has 1 words missing from embedding vocabulary 
 These words are: enginer 
 Lyric 118 has 2 words missing from embedding vocabulary 
-These words are: bumbley juney 
+These words are: juney bumbley 
 Lyric 119 has 0 words missing from embedding vocabulary 
 Lyric 120 has 0 words missing from embedding vocabulary 
 Lyric 121 has 0 words missing from embedding vocabulary 
@@ -180,11 +180,11 @@ Lyric 123 has 1 words missing from embedding vocabulary
 These words are: wonderin 
 Lyric 124 has 0 words missing from embedding vocabulary 
 Lyric 125 has 4 words missing from embedding vocabulary 
-These words are: acapulco–goin gut–goin complainin yeah–goin 
+These words are: complainin acapulco–goin yeah–goin gut–goin 
 Lyric 126 has 1 words missing from embedding vocabulary 
 These words are: closin 
 Lyric 127 has 2 words missing from embedding vocabulary 
-These words are: floatin approachin 
+These words are: approachin floatin 
 Lyric 128 has 0 words missing from embedding vocabulary 
 Lyric 129 has 0 words missing from embedding vocabulary 
 Lyric 130 has 0 words missing from embedding vocabulary 
@@ -206,20 +206,20 @@ Lyric 142 has 0 words missing from embedding vocabulary
 Lyric 143 has 1 words missing from embedding vocabulary 
 These words are: boneeparte 
 Lyric 144 has 9 words missing from embedding vocabulary 
-These words are: shelf— morning—i pourin drownin —risin possessions—folks clarkesdale it—broke preachin 
+These words are: —risin it—broke morning—i possessions—folks pourin shelf— preachin drownin clarkesdale 
 Lyric 145 has 3 words missing from embedding vocabulary 
-These words are: bluebelles buckeyed jokin 
+These words are: jokin bluebelles buckeyed 
 Lyric 146 has 0 words missing from embedding vocabulary 
 Lyric 147 has 0 words missing from embedding vocabulary 
 Lyric 148 has 8 words missing from embedding vocabulary 
-These words are: crashin tossin wait—they avoidin fought—i there—i it—my you—did 
+These words are: avoidin it—my crashin there—i wait—they tossin you—did fought—i 
 Lyric 149 has 0 words missing from embedding vocabulary 
 Lyric 150 has 1 words missing from embedding vocabulary 
 These words are: weepin 
 Lyric 151 has 0 words missing from embedding vocabulary 
 Lyric 152 has 0 words missing from embedding vocabulary 
 Lyric 153 has 3 words missing from embedding vocabulary 
-These words are: flashin sonofabitch prowlin 
+These words are: prowlin flashin sonofabitch 
 Lyric 154 has 1 words missing from embedding vocabulary 
 These words are: rything 
 Lyric 155 has 1 words missing from embedding vocabulary 
@@ -262,14 +262,14 @@ Lyric 181 has 1 words missing from embedding vocabulary
 These words are: ringin 
 Lyric 182 has 0 words missing from embedding vocabulary 
 Lyric 183 has 2 words missing from embedding vocabulary 
-These words are: sufferin warnin 
+These words are: warnin sufferin 
 Lyric 184 has 0 words missing from embedding vocabulary 
 Lyric 185 has 1 words missing from embedding vocabulary 
 These words are: drizzlin 
 Lyric 186 has 0 words missing from embedding vocabulary 
 Lyric 187 has 0 words missing from embedding vocabulary 
 Lyric 188 has 2 words missing from embedding vocabulary 
-These words are: mailtrain leanin 
+These words are: leanin mailtrain 
 Lyric 189 has 0 words missing from embedding vocabulary 
 Lyric 190 has 0 words missing from embedding vocabulary 
 Lyric 191 has 1 words missing from embedding vocabulary 
@@ -285,10 +285,10 @@ These words are: ryone
 Lyric 197 has 1 words missing from embedding vocabulary 
 These words are: chaynee 
 Lyric 198 has 2 words missing from embedding vocabulary 
-These words are: preacherman jokerman 
+These words are: jokerman preacherman 
 Lyric 199 has 0 words missing from embedding vocabulary 
 Lyric 200 has 2 words missing from embedding vocabulary 
-These words are: rybody that— 
+These words are: that— rybody 
 Lyric 201 has 1 words missing from embedding vocabulary 
 These words are: eastertime 
 Lyric 202 has 0 words missing from embedding vocabulary 
@@ -312,7 +312,7 @@ These words are: facin
 Lyric 215 has 0 words missing from embedding vocabulary 
 Lyric 216 has 0 words missing from embedding vocabulary 
 Lyric 217 has 5 words missing from embedding vocabulary 
-These words are: leanin starin fillin drillin plannin 
+These words are: fillin drillin leanin plannin starin 
 Lyric 218 has 0 words missing from embedding vocabulary 
 Lyric 219 has 1 words missing from embedding vocabulary 
 These words are: ringin 
@@ -320,16 +320,16 @@ Lyric 220 has 0 words missing from embedding vocabulary
 Lyric 221 has 0 words missing from embedding vocabulary 
 Lyric 222 has 0 words missing from embedding vocabulary 
 Lyric 223 has 11 words missing from embedding vocabulary 
-These words are: wood—things all—he rustlin defeated—i decorated—he —comin out—weather mill—i —i whisperin sentimental—do 
+These words are: —i decorated—he out—weather all—he whisperin defeated—i rustlin wood—things mill—i sentimental—do —comin 
 Lyric 224 has 1 words missing from embedding vocabulary 
 These words are: lynchin 
 Lyric 225 has 2 words missing from embedding vocabulary 
-These words are: rybody stranglin 
+These words are: stranglin rybody 
 Lyric 226 has 1 words missing from embedding vocabulary 
 These words are: highwayside 
 Lyric 227 has 0 words missing from embedding vocabulary 
 Lyric 228 has 2 words missing from embedding vocabulary 
-These words are: flowin cornersville 
+These words are: cornersville flowin 
 Lyric 229 has 1 words missing from embedding vocabulary 
 These words are: meowed 
 Lyric 230 has 0 words missing from embedding vocabulary 
@@ -338,7 +338,7 @@ Lyric 232 has 0 words missing from embedding vocabulary
 Lyric 233 has 0 words missing from embedding vocabulary 
 Lyric 234 has 0 words missing from embedding vocabulary 
 Lyric 235 has 3 words missing from embedding vocabulary 
-These words are: pretendin pleadin breathin 
+These words are: pleadin pretendin breathin 
 Lyric 236 has 0 words missing from embedding vocabulary 
 Lyric 237 has 1 words missing from embedding vocabulary 
 These words are: chirpin 
@@ -354,12 +354,12 @@ These words are: rybody
 Lyric 244 has 0 words missing from embedding vocabulary 
 Lyric 245 has 0 words missing from embedding vocabulary 
 Lyric 246 has 4 words missing from embedding vocabulary 
-These words are: drownin followin pourin interestin 
+These words are: drownin interestin pourin followin 
 Lyric 247 has 2 words missing from embedding vocabulary 
-These words are: wonderin rature 
+These words are: rature wonderin 
 Lyric 248 has 0 words missing from embedding vocabulary 
 Lyric 249 has 4 words missing from embedding vocabulary 
-These words are: yearnin palm–the preachin crimson–the 
+These words are: yearnin palm–the crimson–the preachin 
 Lyric 250 has 0 words missing from embedding vocabulary 
 Lyric 251 has 1 words missing from embedding vocabulary 
 These words are: rywhere 
@@ -367,9 +367,9 @@ Lyric 252 has 0 words missing from embedding vocabulary
 Lyric 253 has 0 words missing from embedding vocabulary 
 Lyric 254 has 0 words missing from embedding vocabulary 
 Lyric 255 has 8 words missing from embedding vocabulary 
-These words are: evenin escapin swirlin skippin facin wanderin followin disappearin 
+These words are: skippin swirlin evenin escapin facin followin wanderin disappearin 
 Lyric 256 has 2 words missing from embedding vocabulary 
-These words are: foundationed unthought 
+These words are: unthought foundationed 
 Lyric 257 has 0 words missing from embedding vocabulary 
 Lyric 258 has 0 words missing from embedding vocabulary 
 Lyric 259 has 0 words missing from embedding vocabulary 
@@ -379,7 +379,7 @@ Lyric 262 has 0 words missing from embedding vocabulary
 Lyric 263 has 1 words missing from embedding vocabulary 
 These words are: crowin 
 Lyric 264 has 3 words missing from embedding vocabulary 
-These words are: prayin usin hurted 
+These words are: usin prayin hurted 
 Lyric 265 has 0 words missing from embedding vocabulary 
 Lyric 266 has 0 words missing from embedding vocabulary 
 Lyric 267 has 0 words missing from embedding vocabulary 
@@ -412,7 +412,7 @@ These words are: carryin
 Lyric 286 has 2 words missing from embedding vocabulary 
 These words are: rybody frien 
 Lyric 287 has 3 words missing from embedding vocabulary 
-These words are: evenin linin hummin 
+These words are: linin evenin hummin 
 Lyric 288 has 0 words missing from embedding vocabulary 
 Lyric 289 has 1 words missing from embedding vocabulary 
 These words are: knowin 
@@ -423,7 +423,7 @@ These words are: groanin
 Lyric 292 has 1 words missing from embedding vocabulary 
 These words are: rybody 
 Lyric 293 has 13 words missing from embedding vocabulary 
-These words are: boy—never trains—making door—i same—it in—he straight—pickin twinklin you—wo mainline—workin boy—dressed feedin boy—where washin 
+These words are: straight—pickin boy—where boy—dressed washin same—it feedin twinklin boy—never door—i in—he mainline—workin you—wo trains—making 
 Lyric 294 has 0 words missing from embedding vocabulary 
 Lyric 295 has 0 words missing from embedding vocabulary 
 Lyric 296 has 0 words missing from embedding vocabulary 
@@ -431,7 +431,7 @@ Lyric 297 has 0 words missing from embedding vocabulary
 Lyric 298 has 0 words missing from embedding vocabulary 
 Lyric 299 has 0 words missing from embedding vocabulary 
 Lyric 300 has 2 words missing from embedding vocabulary 
-These words are: fennerio fenneario 
+These words are: fenneario fennerio 
 Lyric 301 has 1 words missing from embedding vocabulary 
 These words are: hearin 
 Lyric 302 has 0 words missing from embedding vocabulary 
@@ -445,25 +445,25 @@ Lyric 307 has 0 words missing from embedding vocabulary
 Lyric 308 has 2 words missing from embedding vocabulary 
 These words are: evenin bluffin 
 Lyric 309 has 2 words missing from embedding vocabulary 
-These words are: rybody bautiful 
+These words are: bautiful rybody 
 Lyric 310 has 2 words missing from embedding vocabulary 
-These words are: knowin unknowin 
+These words are: unknowin knowin 
 Lyric 311 has 0 words missing from embedding vocabulary 
 Lyric 312 has 1 words missing from embedding vocabulary 
 These words are: huffin 
 Lyric 313 has 0 words missing from embedding vocabulary 
 Lyric 314 has 0 words missing from embedding vocabulary 
 Lyric 315 has 4 words missing from embedding vocabulary 
-These words are: crumblin sufferin gleamin glowin 
+These words are: crumblin gleamin sufferin glowin 
 Lyric 316 has 3 words missing from embedding vocabulary 
-These words are: ilores agarrame vigila 
+These words are: vigila agarrame ilores 
 Lyric 317 has 2 words missing from embedding vocabulary 
 These words are: nurs fancytalker 
 Lyric 318 has 1 words missing from embedding vocabulary 
 These words are: saintlike 
 Lyric 319 has 0 words missing from embedding vocabulary 
 Lyric 320 has 2 words missing from embedding vocabulary 
-These words are: leanin ryday 
+These words are: ryday leanin 
 Lyric 321 has 1 words missing from embedding vocabulary 
 These words are: hearin 
 Lyric 322 has 0 words missing from embedding vocabulary 
@@ -474,13 +474,13 @@ Lyric 326 has 1 words missing from embedding vocabulary
 These words are: hidin 
 Lyric 327 has 0 words missing from embedding vocabulary 
 Lyric 328 has 2 words missing from embedding vocabulary 
-These words are: groanin bendin 
+These words are: bendin groanin 
 Lyric 329 has 1 words missing from embedding vocabulary 
 These words are: hesitatin 
 Lyric 330 has 0 words missing from embedding vocabulary 
 Lyric 331 has 0 words missing from embedding vocabulary 
 Lyric 332 has 4 words missing from embedding vocabulary 
-These words are: expectin rytime rythin rybody 
+These words are: rytime rybody rythin expectin 
 Lyric 333 has 1 words missing from embedding vocabulary 
 These words are: mournin 
 Lyric 334 has 0 words missing from embedding vocabulary 
@@ -510,7 +510,7 @@ These words are: halfways wond
 Lyric 353 has 1 words missing from embedding vocabulary 
 These words are: whoppin 
 Lyric 354 has 2 words missing from embedding vocabulary 
-These words are: weepin hawlin 
+These words are: hawlin weepin 
 Lyric 355 has 1 words missing from embedding vocabulary 
 These words are: ploughboy 
 Lyric 356 has 0 words missing from embedding vocabulary 
@@ -521,9 +521,9 @@ Lyric 359 has 1 words missing from embedding vocabulary
 These words are: ryone 
 Lyric 360 has 0 words missing from embedding vocabulary 
 Lyric 361 has 3 words missing from embedding vocabulary 
-These words are: back—you maker— up—seek 
+These words are: up—seek maker— back—you 
 Lyric 362 has 7 words missing from embedding vocabulary 
-These words are: ringin eyes—you countin suckin ready—lift beginnin in—set 
+These words are: beginnin ringin ready—lift eyes—you in—set suckin countin 
 Lyric 363 has 0 words missing from embedding vocabulary 
 Lyric 364 has 0 words missing from embedding vocabulary 
 Lyric 365 has 0 words missing from embedding vocabulary 
@@ -537,9 +537,9 @@ Lyric 370 has 2 words missing from embedding vocabulary
 These words are: knowed investigatin 
 Lyric 371 has 0 words missing from embedding vocabulary 
 Lyric 372 has 4 words missing from embedding vocabulary 
-These words are: aroun sumpin player— conelrad 
+These words are: player— sumpin conelrad aroun 
 Lyric 373 has 2 words missing from embedding vocabulary 
-These words are: pourin wond 
+These words are: wond pourin 
 Lyric 374 has 1 words missing from embedding vocabulary 
 These words are: rybody 
 Lyric 375 has 0 words missing from embedding vocabulary 
@@ -581,7 +581,7 @@ These words are: rybody
 Lyric 400 has 1 words missing from embedding vocabulary 
 These words are: rything 
 Lyric 401 has 3 words missing from embedding vocabulary 
-These words are: finishin returnin breathlike 
+These words are: breathlike finishin returnin 
 Lyric 402 has 1 words missing from embedding vocabulary 
 These words are: worthlessly 
 Lyric 403 has 1 words missing from embedding vocabulary 
@@ -590,7 +590,7 @@ Lyric 404 has 0 words missing from embedding vocabulary
 Lyric 405 has 1 words missing from embedding vocabulary 
 These words are: rybody 
 Lyric 406 has 2 words missing from embedding vocabulary 
-These words are: crumblin haulin 
+These words are: haulin crumblin 
 Lyric 407 has 2 words missing from embedding vocabulary 
 These words are: wonderin preachin 
 Lyric 408 has 0 words missing from embedding vocabulary 
@@ -607,14 +607,14 @@ These words are: babababababy
 Lyric 417 has 0 words missing from embedding vocabulary 
 Lyric 418 has 0 words missing from embedding vocabulary 
 Lyric 419 has 2 words missing from embedding vocabulary 
-These words are: starin hearin 
+These words are: hearin starin 
 Lyric 420 has 2 words missing from embedding vocabulary 
-These words are: –made complainin 
+These words are: complainin –made 
 Lyric 421 has 0 words missing from embedding vocabulary 
 Lyric 422 has 3 words missing from embedding vocabulary 
-These words are: followin wond trackin 
+These words are: wond trackin followin 
 Lyric 423 has 4 words missing from embedding vocabulary 
-These words are: lectricity rything temptin jeeze 
+These words are: lectricity jeeze temptin rything 
 Lyric 424 has 0 words missing from embedding vocabulary 
 Lyric 425 has 1 words missing from embedding vocabulary 
 These words are: wondrin 
@@ -625,7 +625,7 @@ These words are: wonderin
 Lyric 428 has 0 words missing from embedding vocabulary 
 Lyric 429 has 0 words missing from embedding vocabulary 
 Lyric 430 has 2 words missing from embedding vocabulary 
-These words are: clappin somewheres 
+These words are: somewheres clappin 
 Lyric 431 has 0 words missing from embedding vocabulary 
 Lyric 432 has 0 words missing from embedding vocabulary 
 Lyric 433 has 0 words missing from embedding vocabulary 
@@ -638,9 +638,9 @@ Lyric 438 has 0 words missing from embedding vocabulary
 Lyric 439 has 0 words missing from embedding vocabulary 
 Lyric 440 has 0 words missing from embedding vocabulary 
 Lyric 441 has 3 words missing from embedding vocabulary 
-These words are: drownded breathin touchin 
+These words are: touchin breathin drownded 
 Lyric 442 has 2 words missing from embedding vocabulary 
-These words are: rything itwhen 
+These words are: itwhen rything 
 Lyric 443 has 0 words missing from embedding vocabulary 
 Lyric 444 has 1 words missing from embedding vocabulary 
 These words are: undrape 
@@ -652,15 +652,15 @@ Lyric 447 has 1 words missing from embedding vocabulary
 These words are: wiggle—you 
 Lyric 448 has 0 words missing from embedding vocabulary 
 Lyric 449 has 2 words missing from embedding vocabulary 
-These words are: rything quarrelin 
+These words are: quarrelin rything 
 Lyric 450 has 0 words missing from embedding vocabulary 
 Lyric 451 has 0 words missing from embedding vocabulary 
 Lyric 452 has 4 words missing from embedding vocabulary 
-These words are: listenin evenin settlin buyin 
+These words are: evenin settlin listenin buyin 
 Lyric 453 has 0 words missing from embedding vocabulary 
 Lyric 454 has 0 words missing from embedding vocabulary 
 Lyric 455 has 2 words missing from embedding vocabulary 
-These words are: chokin jokin 
+These words are: jokin chokin 
 Lyric 456 has 0 words missing from embedding vocabulary 
 Lyric 457 has 0 words missing from embedding vocabulary 
 Lyric 458 has 0 words missing from embedding vocabulary 
