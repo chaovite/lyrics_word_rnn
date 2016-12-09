@@ -76,7 +76,7 @@ def _file_to_word_ids(filename, word_to_id):
     return [word_to_id[word] for word in data if word in word_to_id]
 
 
-def lyric_raw_data(data_path=None):
+def lyric_raw_data(data_path, size, vocab):
     """Load raw data from data directory "data_path".
     Reads text files, converts strings to integer ids,
     and performs mini-batching of the inputs.
@@ -94,8 +94,8 @@ def lyric_raw_data(data_path=None):
     test_path = os.path.join(data_path, "test.txt")
     total_txt_path = os.path.join(data_path,'total.txt')
 
-    word_to_id, embedding = _build_vocab(total_txt_path, embedding_folder = 'embedding/', 
-                        vocab=10000, size = 50, rank_top = 0, rank_low = 20000)
+    word_to_id, embedding = _build_vocab(total_txt_path, 'embedding/', 
+                        vocab, size, rank_top = 0, rank_low = 20000)
     train_data = _file_to_word_ids(train_path, word_to_id)
     valid_data = _file_to_word_ids(valid_path, word_to_id)
     test_data = _file_to_word_ids(test_path, word_to_id)

@@ -305,15 +305,14 @@ def main(_):
   if not FLAGS.data_path:
     raise ValueError("Must set --data_path to lyric data directory")
 
-  raw_data = reader.lyric_raw_data(FLAGS.data_path)
-  train_data, valid_data, test_data, embedding = raw_data
-  print('Dimension embedding is:', embedding.shape)
-
   config = get_config()
   eval_config = get_config()
   eval_config.batch_size = 1
   eval_config.num_steps = 1
   
+  raw_data = reader.lyric_raw_data(FLAGS.data_path,config.hidden_size,config.vocab_size)
+  train_data, valid_data, test_data, embedding = raw_data
+  print('Dimension embedding is:', embedding.shape)
 
   with tf.Graph().as_default():
     initializer = tf.random_uniform_initializer(-config.init_scale,config.init_scale)
